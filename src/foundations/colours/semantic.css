@@ -1,0 +1,15 @@
+/* semantic.css — must switch, so: inline */
+@theme inline {
+    --color-surface-default: var(--semantic-surface-default);
+    --color-surface-subtle: var(--semantic-surface-subtle);
+}
+
+[data-theme="light"] {
+    --semantic-surface-default: var(--palette-neutral-50);
+    --semantic-surface-subtle: var(--palette-neutral-100);
+}
+
+[data-theme="dark"] {
+    --semantic-surface-default: var(--palette-neutral-950);
+    --semantic-surface-subtle: var(--palette-neutral-900);
+}

@@ -10,7 +10,7 @@ export default defineConfig({
         react(),
         dts({
             tsconfigPath: "./tsconfig.app.json",
-            include: ["src/index.ts", "src/atoms/**/*"],
+            include: ["src/index.ts", "src/components/**/*"],
         }),
     ],
     build: {
