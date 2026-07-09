@@ -2,14 +2,66 @@
 @theme inline {
     --color-surface-default: var(--semantic-surface-default);
     --color-surface-subtle: var(--semantic-surface-subtle);
+    --color-surface-elevated: var(--semantic-surface-elevated);
+
+    --color-fg-default: var(--semantic-fg-default);
+    --color-fg-muted: var(--semantic-fg-muted);
+    --color-fg-subtle: var(--semantic-fg-subtle);
+    --color-fg-disabled: var(--semantic-fg-disabled);
+    --color-fg-on-brand: var(--semantic-fg-on-brand);
+    --color-fg-inverse: var(--semantic-fg-inverse);
+    --color-fg-on-status: var(--semantic-fg-on-status);
+
+    --color-line-default: var(--semantic-line-default);
+    --color-line-subtle: var(--semantic-line-subtle);
+    --color-line-strong: var(--semantic-line-strong);
+
+    --color-brand-default: var(--semantic-brand-default);
+    --color-brand-subtle: var(--semantic-brand-subtle);
+    --color-brand-strong: var(--semantic-brand-strong);
 }
 
+:root,
 [data-theme="light"] {
     --semantic-surface-default: var(--palette-neutral-50);
     --semantic-surface-subtle: var(--palette-neutral-100);
+    --semantic-surface-elevated: var(--palette-white);
+
+    --color-fg-default: var(--palette-neutral-900);
+    --color-fg-muted: var(--palette-neutral-500);
+    --color-fg-subtle: var(--palette-neutral-300);
+    --color-fg-disabled: var(--palette-neutral-300);
+    --color-fg-on-brand: var(--palette-white);
+    --color-fg-inverse: var(--palette-white);
+    --color-fg-on-status: var(--palette-white);
+
+    --color-line-default: var(--palette-neutral-200);
+    --color-line-subtle: var(--palette-neutral-100);
+    --color-line-strong: var(--palette-neutral-400);
+
+    --color-brand-default: var(--palette-cobalt-500);
+    --color-brand-subtle: var(--palette-cobalt-100);
+    --color-brand-strong: var(--palette-cobalt-700);
 }
 
 [data-theme="dark"] {
     --semantic-surface-default: var(--palette-neutral-950);
     --semantic-surface-subtle: var(--palette-neutral-900);
+    --semantic-surface-elevated: var(--palette-neutral-800);
+
+    --color-fg-default: var(--palette-neutral-50);
+    --color-fg-muted: var(--palette-neutral-400);
+    --color-fg-subtle: var(--palette-neutral-700);
+    --color-fg-disabled: var(--palette-neutral-700);
+    --color-fg-on-brand: var(--palette-white);
+    --color-fg-inverse: var(--palette-neutral-950);
+    --color-fg-on-status: var(--palette-white);
+
+    --color-line-default: var(--palette-neutral-700);
+    --color-line-subtle: var(--palette-neutral-800);
+    --color-line-strong: var(--palette-neutral-500);
+
+    --color-brand-default: var(--palette-cobalt-400);
+    --color-brand-subtle: var(--palette-cobalt-900);
+    --color-brand-strong: var(--palette-cobalt-300);
 }
