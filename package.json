@@ -1,5 +1,5 @@
 {
-    "name": "mahry-ds",
+    "name": "@mahry/ds",
     "description": "Mahry DS — a lean, generic, AI-readable design system foundation.",
     "license": "MIT",
     "repository": {
@@ -34,14 +34,11 @@
         "react": "^19.0.0",
         "react-dom": "^19.0.0"
     },
-    "dependencies": {
+    "dependencies": {},
+    "devDependencies": {
         "@fontsource-variable/inter": "^5.2.8",
         "@tailwindcss/vite": "^4.3.2",
-        "react": "^19.0.0",
-        "react-dom": "^19.0.0",
-        "tailwindcss": "^4.3.2"
-    },
-    "devDependencies": {
+        "tailwindcss": "^4.3.2",
         "@chromatic-com/storybook": "^5.2.1",
         "@storybook/addon-a11y": "^10.4.6",
         "@storybook/addon-docs": "^10.4.6",
