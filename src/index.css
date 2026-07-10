@@ -1,3 +1,7 @@
 @import "tailwindcss";
+
 @import "./foundations/colours/primitive.css";
 @import "./foundations/colours/semantic.css";
+
+@import "./foundations/typography/primitive.css";
+@import "./foundations/typography/semantic.css";
