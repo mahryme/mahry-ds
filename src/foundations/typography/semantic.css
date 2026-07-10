@@ -3,7 +3,6 @@
     --font-heading: var(--typo-font-sans);
     --font-body: var(--typo-font-sans);
     --font-label: var(--typo-font-sans);
-    --font-mono: var(--typo-font-mono);
 
     --text-display-xl: 4.5rem;
     --text-display-xl--line-height: calc(90 / 72);
