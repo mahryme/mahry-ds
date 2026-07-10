@@ -1,5 +1,14 @@
 {
     "name": "mahry-ds",
+    "description": "Mahry DS — a lean, generic, AI-readable design system foundation.",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mahryme/mahry-ds.git"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
     "version": "0.0.1",
     "type": "module",
     "files": [
