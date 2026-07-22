@@ -66,10 +66,10 @@
         --semantic-action-tertiary-border-disabled
     );
 
-    --color-action-ghost-hover: var(--semantic-ghost-hover);
-    --color-action-ghost-press: var(--semantic-ghost-press);
-    --color-on-action-ghost: var(--semantic-on-ghost);
-    --color-action-on-ghost-disabled: var(--semantic-on-ghost-disabled);
+    --color-action-ghost-hover: var(--semantic-action-ghost-hover);
+    --color-action-ghost-press: var(--semantic-action-ghost-press);
+    --color-action-on-ghost: var(--semantic-action-on-ghost);
+    --color-action-on-ghost-disabled: var(--semantic-action-on-ghost-disabled);
 }
 
 :root,
@@ -105,7 +105,7 @@
     --semantic-border-secondary: var(--palette-neutral-200);
     --semantic-border-tertiary: var(--palette-neutral-100);
     --semantic-border-brand: var(--palette-cobalt-400);
-    --semantic-border-focus: var(--palette-cobalt-500);
+    --semantic-border-focus: var(--palette-cobalt-600);
 
     --semantic-action-primary: var(--palette-cobalt-500);
     --semantic-action-primary-hover: var(--palette-cobalt-600);
