@@ -5,7 +5,7 @@ base for [mahry.fyi](https://mahry.fyi) and future prototypes. Native Figma
 variables in, Tailwind CSS v4 out.
 
 **Status:** early — foundational colour and typography tokens are in place;
-components are just getting started.
+Button, IconButton and Badge atoms shipped.
 
 ## Install
 
@@ -19,7 +19,7 @@ concerns, not bundled.
 ## Usage
 
 ​`ts
-import { Button } from "@mahry/ds";
+import { Button, IconButton, Badge } from "@mahry/ds";
 import "@mahry/ds/styles";
 ​`
 
@@ -59,7 +59,7 @@ primitive → semantic → component
 - **Primitive** — raw values (palette colours, font families), namespaced
   outside Tailwind's reserved prefixes (`--palette-*`, `--typo-*`) so they're
   never consumable directly as utility classes.
-- **Semantic** — role-based tokens (`fg`, `surface`, `line`, `heading`,
+- **Semantic** — role-based tokens (`fg`, `container`, `border`, `heading`,
   `body`...) that alias primitives and are the only layer components should
   consume.
 - **Component** — opt-in, component-scoped tokens for the rare cases the
