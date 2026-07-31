@@ -1,4 +1,4 @@
-import "./index.css";
+import "./tokens.css";
 
 export { Button, buttonVariants } from "./components/atoms/button/Button";
 export type { ButtonProps } from "./components/atoms/button/Button";
