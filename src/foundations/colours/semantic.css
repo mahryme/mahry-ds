@@ -90,8 +90,8 @@
     --semantic-container-info: var(--palette-blue-100);
 
     --semantic-fg-primary: var(--palette-neutral-900);
-    --semantic-fg-secondary: var(--palette-neutral-500);
-    --semantic-fg-tertiary: var(--palette-neutral-400);
+    --semantic-fg-secondary: var(--palette-neutral-600);
+    --semantic-fg-tertiary: var(--palette-neutral-500);
     --semantic-fg-disabled: var(--palette-neutral-300);
     --semantic-fg-on-brand: var(--palette-cobalt-600);
     --semantic-fg-inverse: var(--palette-white);
@@ -154,7 +154,7 @@
 
     --semantic-fg-primary: var(--palette-neutral-50);
     --semantic-fg-secondary: var(--palette-neutral-300);
-    --semantic-fg-tertiary: var(--palette-neutral-600);
+    --semantic-fg-tertiary: var(--palette-neutral-400);
     --semantic-fg-disabled: var(--palette-neutral-700);
     --semantic-fg-on-brand: var(--palette-cobalt-300);
     --semantic-fg-inverse: var(--palette-neutral-950);
