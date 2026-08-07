@@ -4,16 +4,16 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "../../../lib/utils";
 
 export const buttonVariants = cva(
-    "inline-flex items-center justify-center gap-1 h-9 rounded-lg px-3 py-2 font-label text-label-lg whitespace-nowrap transition-colors duration-200 ease-out outline-none disabled:pointer-events-none disabled:cursor-not-allowed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-border-focus",
+    "inline-flex items-center justify-center gap-1 h-9 rounded-lg px-3 py-2 font-label text-label-lg whitespace-nowrap transition-all duration-400 ease-out hover:shadow-none outline-none disabled:pointer-events-none disabled:cursor-not-allowed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-border-focus",
     {
         variants: {
             variant: {
                 primary:
-                    "bg-action-primary text-action-on-primary hover:bg-action-primary-hover active:bg-action-primary-press disabled:bg-action-primary-disabled disabled:text-action-on-primary-disabled",
+                    "bg-action-primary text-action-on-primary shadow-xs hover:bg-action-primary-hover active:bg-action-primary-press disabled:bg-action-primary-disabled disabled:text-action-on-primary-disabled",
                 secondary:
-                    "bg-action-secondary text-action-on-secondary hover:bg-action-secondary-hover active:bg-action-secondary-press disabled:bg-action-secondary-disabled disabled:text-action-on-secondary-disabled",
+                    "bg-action-secondary text-action-on-secondary shadow-xs hover:bg-action-secondary-hover active:bg-action-secondary-press disabled:bg-action-secondary-disabled disabled:text-action-on-secondary-disabled",
                 tertiary:
-                    "bg-action-tertiary text-action-on-tertiary border border-action-tertiary-border hover:bg-action-tertiary-hover active:bg-action-tertiary-press disabled:bg-action-tertiary-disabled disabled:text-action-on-tertiary-disabled disabled:border-action-tertiary-border-disabled",
+                    "bg-action-tertiary text-action-on-tertiary border border-action-tertiary-border shadow-xs hover:bg-action-tertiary-hover active:bg-action-tertiary-press disabled:bg-action-tertiary-disabled disabled:text-action-on-tertiary-disabled disabled:border-action-tertiary-border-disabled",
                 ghost: "bg-transparent text-action-on-ghost hover:bg-action-ghost-hover active:bg-action-ghost-press disabled:text-action-on-ghost-disabled",
             },
         },
