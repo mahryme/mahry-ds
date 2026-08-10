@@ -1,57 +1,72 @@
 /* semantic.css — typography roles, no theming (values don't change by mode) */
+/* Usage comments below pulled from Figma, file TAEpKurZNTd8QzhDvheWlH, node 289:2 (Typography Specimen).
+   Update here if the Figma description changes. */
 @theme {
     --font-heading: var(--typo-font-sans);
     --font-body: var(--typo-font-sans);
     --font-label: var(--typo-font-sans);
 
+    /* Hero headlines and full-bleed title text — tight (1.25x) */
     --text-display-xl: 4.5rem;
     --text-display-xl--line-height: calc(90 / 72);
     --text-display-xl--font-weight: 700;
 
+    /* Large display headings for marketing sections — tight (1.25x) */
     --text-display-lg: 3.75rem;
     --text-display-lg--line-height: calc(75 / 60);
     --text-display-lg--font-weight: 700;
 
+    /* Mid-scale display text and feature headings — tight (1.25x) */
     --text-display-md: 3rem;
     --text-display-md--line-height: calc(60 / 48);
     --text-display-md--font-weight: 600;
 
+    /* Primary page and section headings — snug (1.375x) */
     --text-heading-lg: 2.25rem;
     --text-heading-lg--line-height: calc(50 / 36);
     --text-heading-lg--font-weight: 600;
 
+    /* Secondary section headings and card titles — snug (1.375x) */
     --text-heading-md: 1.875rem;
     --text-heading-md--line-height: calc(42 / 30);
     --text-heading-md--font-weight: 600;
 
+    /* Tertiary headings and prominent labels — snug (1.375x) */
     --text-heading-sm: 1.5rem;
     --text-heading-sm--line-height: calc(34 / 24);
     --text-heading-sm--font-weight: 500;
 
+    /* Large body copy for comfortable long-form reading — relaxed (1.625x) */
     --text-body-lg: 1.125rem;
     --text-body-lg--line-height: calc(29 / 18);
     --text-body-lg--font-weight: 400;
 
+    /* Default body text for UI and content — normal (1.5x) */
     --text-body-md: 1rem;
     --text-body-md--line-height: calc(24 / 16);
     --text-body-md--font-weight: 400;
 
+    /* Secondary body text and helper copy — normal (1.5x) */
     --text-body-sm: 0.875rem;
     --text-body-sm--line-height: calc(21 / 14);
     --text-body-sm--font-weight: 400;
 
+    /* Prominent UI labels, button text, and navigation items — normal (1.5x) */
     --text-label-lg: 1rem;
     --text-label-lg--line-height: calc(24 / 16);
     --text-label-lg--font-weight: 500;
 
+    /* Standard UI labels and form field labels — normal (1.5x) */
     --text-label-md: 0.875rem;
     --text-label-md--line-height: calc(20 / 14);
     --text-label-md--font-weight: 500;
 
+    /* Small labels, badges, and compact UI controls — normal (1.5x) */
     --text-label-sm: 0.75rem;
     --text-label-sm--line-height: calc(16 / 12);
     --text-label-sm--font-weight: 500;
 
+    /* Fine-print, timestamps, and supplementary metadata — normal (1.5x) */
     --text-caption-default: 0.75rem;
     --text-caption-default--line-height: calc(16 / 12);
     --text-caption-default--font-weight: 400;
