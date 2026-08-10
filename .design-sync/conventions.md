@@ -4,8 +4,10 @@ Mahry DS ships **no CSS-in-JS and no component props for color/spacing/type** �
 
 **Color families** (each resolves to a themed CSS var, light/dark aware):
 - `bg-surface-default` / `bg-surface-recessed` — page/section backgrounds
-- `bg-container-high` / `bg-container-low` / `bg-container-brand` / `bg-container-{error,warning,success,info}[-strong]` — card/panel surfaces
-- `text-fg-primary` / `text-fg-secondary` / `text-fg-tertiary` / `text-fg-disabled` / `text-fg-inverse` / `text-fg-on-brand` / `text-fg-{error,warning,success,info}` — text color
+- `bg-container-high` / `bg-container-low` / `bg-container-brand` / `bg-container-{error,warning,success,info}` and their `-strong` variants (`bg-container-error-strong` — saturated fill, pair with `text-fg-on-status`) — card/panel surfaces
+- `text-fg-primary` / `text-fg-secondary` / `text-fg-tertiary` / `text-fg-disabled` / `text-fg-inverse` / `text-fg-on-brand` / `text-fg-on-status` / `text-fg-{error,warning,success,info}` — text color
+
+Every colour family above also exists in `text-`, `bg-`, and `border-` forms (e.g. `border-action-primary`, `text-container-brand`), so pick the prefix the property needs.
 - `border-border-primary` / `border-border-secondary` / `border-border-tertiary` / `border-border-brand` / `border-border-focus`
 - `bg-action-{primary,secondary,tertiary}[-hover|-press|-disabled]`, `text-action-on-{primary,secondary,tertiary,ghost}[-disabled]`, `bg-action-ghost-hover` — interactive-element colors (what `Button`/`IconButton` use internally)
 
@@ -17,7 +19,9 @@ Mahry DS ships **no CSS-in-JS and no component props for color/spacing/type** �
 
 ## Wrapping and setup
 
-No provider/root wrapper is required — components render correctly standalone. Nothing broke in preview verification without one. The one setup requirement is loading `styles.css` before rendering (it pulls in fonts + component styles via `@import`); components mount and function without it, but render unstyled.
+No provider/root wrapper is required — components render correctly standalone. Nothing broke in preview verification without one. The one setup requirement is loading `styles.css` before rendering (it pulls in fonts, the CSS reset, and component styles via `@import`); components mount and function without it, but render unstyled.
+
+`styles.css` already includes a full CSS reset, so native elements (`button`, `a`, `h1`–`h6`, `p`, `ul`) start unstyled rather than with browser defaults — style them with the token classes below. Don't add a second reset.
 
 ## Where the truth lives
 

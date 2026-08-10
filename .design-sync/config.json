@@ -4,6 +4,8 @@
   "globalName": "MahryDS",
   "shape": "storybook",
   "storybookStatic": ".design-sync/sb-reference",
-  "buildCmd": "npm run build:lib",
+  "buildCmd": "npm run build:dist",
+  "cssEntry": "./dist/standalone-reset.css",
+  "extraFonts": ["./node_modules/@fontsource-variable/inter/index.css"],
   "readmeHeader": ".design-sync/conventions.md"
 }
