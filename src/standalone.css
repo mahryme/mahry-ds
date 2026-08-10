@@ -1,0 +1,32 @@
+/* standalone.css — pre-compiled token utilities for consumers with no Tailwind build.
+   Code consumers should keep using `@mahry/ds/styles` (raw theme) instead.
+   No preflight: this is additive, meant to layer onto a host environment.
+   When a semantic token is added or renamed, add it below or it won't be emitted. */
+
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@import "./tokens.css";
+
+/* Typography */
+@source inline("font-{heading,body,label}");
+@source inline("text-{display-xl,display-lg,display-md}");
+@source inline("text-{heading-lg,heading-md,heading-sm}");
+@source inline("text-{body-lg,body-md,body-sm}");
+@source inline("text-{label-lg,label-md,label-sm}");
+@source inline("text-caption-default");
+
+/* Colour — surface */
+@source inline("{text,bg,border}-{surface-default,surface-recessed}");
+
+/* Colour — container */
+@source inline("{text,bg,border}-{container-high,container-low,container-brand,container-error,container-error-strong,container-warning,container-warning-strong,container-success,container-success-strong,container-info,container-info-strong}");
+
+/* Colour — foreground */
+@source inline("{text,bg,border}-{fg-primary,fg-secondary,fg-tertiary,fg-disabled,fg-on-brand,fg-inverse,fg-on-status,fg-error,fg-warning,fg-success,fg-info}");
+
+/* Colour — border */
+@source inline("{text,bg,border}-{border-primary,border-secondary,border-tertiary,border-brand,border-focus}");
+
+/* Colour — action */
+@source inline("{text,bg,border}-{action-primary,action-primary-hover,action-primary-press,action-primary-disabled,action-on-primary,action-on-primary-disabled,action-secondary,action-secondary-hover,action-secondary-press,action-secondary-disabled,action-on-secondary,action-on-secondary-disabled,action-tertiary,action-tertiary-hover,action-tertiary-press,action-tertiary-disabled,action-on-tertiary,action-on-tertiary-disabled,action-tertiary-border,action-tertiary-border-disabled,action-ghost-hover,action-ghost-press,action-on-ghost,action-on-ghost-disabled}");
