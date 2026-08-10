@@ -9,7 +9,7 @@
     "publishConfig": {
         "access": "public"
     },
-    "version": "0.3.4",
+    "version": "0.3.5",
     "type": "module",
     "files": [
         "dist"
@@ -19,7 +19,8 @@
             "types": "./dist/index.d.ts",
             "import": "./dist/index.js"
         },
-        "./styles": "./dist/index.css"
+        "./styles": "./dist/index.css",
+        "./standalone.css": "./dist/standalone.css"
     },
     "scripts": {
         "dev": "vite",
@@ -28,7 +29,9 @@
         "preview": "vite preview",
         "storybook": "storybook dev -p 6006",
         "build-storybook": "storybook build",
-        "build:lib": "vite build --config vite.lib.config.ts"
+        "build:lib": "vite build --config vite.lib.config.ts",
+        "build:styles": "tailwindcss -i ./src/standalone.css -o ./dist/standalone.css --minify",
+        "build:dist": "npm run build:lib && npm run build:styles"
     },
     "peerDependencies": {
         "react": "^19.0.0",
@@ -47,6 +50,7 @@
         "@storybook/addon-docs": "^10.4.6",
         "@storybook/addon-vitest": "^10.4.6",
         "@storybook/react-vite": "^10.4.6",
+        "@tailwindcss/cli": "^4.3.2",
         "@tailwindcss/vite": "^4.3.2",
         "@testing-library/jest-dom": "^7.0.0",
         "@testing-library/react": "^16.3.2",
