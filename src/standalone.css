@@ -1,10 +1,13 @@
 /* standalone.css — pre-compiled token utilities for consumers with no Tailwind build.
    Code consumers should keep using `@mahry/ds/styles` (raw theme) instead.
-   No preflight: this is additive, meant to layer onto a host environment.
+   Includes preflight: a consumer with no build has no reset either, so without
+   it native elements keep browser defaults (a black <button> border, underlined
+   <a>) and components render wrong.
    When a semantic token is added or renamed, add it below or it won't be emitted. */
 
 @layer theme, base, components, utilities;
 @import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
 @import "tailwindcss/utilities.css" layer(utilities);
 @import "./tokens.css";
 
