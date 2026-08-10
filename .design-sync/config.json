@@ -1,0 +1,9 @@
+{
+  "projectId": "62517e11-90d0-4b53-93ed-48e72b06e27e",
+  "pkg": "@mahry/ds",
+  "globalName": "MahryDS",
+  "shape": "storybook",
+  "storybookStatic": ".design-sync/sb-reference",
+  "buildCmd": "npm run build:lib",
+  "readmeHeader": ".design-sync/conventions.md"
+}
