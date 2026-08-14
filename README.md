@@ -5,7 +5,7 @@ base for [mahry.fyi](https://mahry.fyi) and future prototypes. Native Figma
 variables in, Tailwind CSS v4 out.
 
 **Status:** early — foundational colour and typography tokens are in place;
-Button, IconButton and Badge atoms shipped.
+Button, IconButton, Badge, Container, Divider and Card atoms shipped.
 
 ## Install
 
@@ -19,7 +19,7 @@ concerns, not bundled.
 ## Usage
 
 ​`ts
-import { Button, IconButton, Badge } from "@mahry/ds";
+import { Button, IconButton, Badge, Container, Divider, Card } from "@mahry/ds";
 import "@mahry/ds/styles";
 ​`
 
