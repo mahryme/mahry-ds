@@ -6,7 +6,7 @@ export const containerVariants = cva("mx-auto w-full", {
     variants: {
         type: {
             default: "max-w-[1360px] px-5 py-5 md:px-10 md:py-8",
-            nav: "max-w-[1360px] px-5 py-2 md:px-10 md:py-2",
+            nav: "max-w-[1360px] px-5 py-2 md:px-10 md:py-3",
             blog: "max-w-3xl px-5 py-5 md:px-10 md:py-8",
         },
     },
