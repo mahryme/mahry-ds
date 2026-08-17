@@ -1,9 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import "./foundations/typography/fonts.css";
-import { Button } from "./components/atoms/button/Button";
-import { Badge } from "./components/atoms/badge/Badge";
+import { Container } from "./components/atoms/container/Container";
 
 function Label({ children }: { children: React.ReactNode }) {
     return (
@@ -12,7 +10,7 @@ function Label({ children }: { children: React.ReactNode }) {
                 fontFamily: "monospace",
                 fontSize: 11,
                 opacity: 0.6,
-                margin: "0 0 4px",
+                margin: "0 0 8px",
             }}
         >
             {children}
@@ -20,52 +18,58 @@ function Label({ children }: { children: React.ReactNode }) {
     );
 }
 
+const boundary = {
+    outline: "1px dashed currentColor",
+    background: "rgba(99, 102, 241, 0.06)",
+};
+
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
-        <div style={{ padding: 24, display: "grid", gap: 32, maxWidth: 640 }}>
+        <div style={{ display: "grid", gap: 40, padding: "24px 0" }}>
             <section>
                 <Label>
-                    LAYOUT — font-heading + text-display-xl (both classes)
+                    Container type=&quot;nav&quot; — max-w-7xl, px-5 py-2,
+                    md:px-10 md:py-5 (resize viewport to see the responsive
+                    padding jump)
                 </Label>
-                <p className="font-heading text-display-xl">Display XL</p>
+                <Container type="nav" style={boundary}>
+                    <div
+                        style={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "space-between",
+                        }}
+                    >
+                        <strong>Logo</strong>
+                        <div style={{ display: "flex", gap: 16 }}>
+                            <span>Home</span>
+                            <span>Docs</span>
+                            <span>About</span>
+                        </div>
+                    </div>
+                </Container>
             </section>
 
             <section>
                 <Label>
-                    LAYOUT — font-heading + text-heading-lg (both classes)
+                    Container type=&quot;default&quot; — max-w-7xl, no padding
                 </Label>
-                <p className="font-heading text-heading-lg">Heading LG</p>
+                <Container style={boundary}>
+                    <p>Default container content, full max-w-7xl width.</p>
+                </Container>
             </section>
 
             <section>
                 <Label>
-                    LAYOUT — text-heading-lg ONLY, no font-heading (tests
-                    whether font-family silently falls back)
+                    Container type=&quot;blog&quot; — max-w-3xl, gap-8 (note:
+                    gap only applies if the container itself is flex/grid —
+                    this div is block, so gap-8 currently has no visible
+                    effect on these children)
                 </Label>
-                <p className="text-heading-lg">Heading LG, no font class</p>
-            </section>
-
-            <section>
-                <Label>LAYOUT — font-body + text-body-md (both classes)</Label>
-                <p className="font-body text-body-md">Body MD paragraph</p>
-            </section>
-
-            <hr style={{ opacity: 0.2 }} />
-
-            <section>
-                <Label>
-                    COMPONENT — Button (internally uses font-label text-label-lg
-                    via cva)
-                </Label>
-                <Button label="Primary button" variant="primary" />
-            </section>
-
-            <section>
-                <Label>
-                    COMPONENT — Badge (internally uses font-label text-label-sm
-                    via cva)
-                </Label>
-                <Badge>Badge label</Badge>
+                <Container type="blog" style={boundary}>
+                    <p>First paragraph of blog content.</p>
+                    <p>Second paragraph, to check spacing between children.</p>
+                </Container>
             </section>
         </div>
     </StrictMode>,

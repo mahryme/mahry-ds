@@ -5,9 +5,9 @@ import { cn } from "../../../lib/utils";
 export const containerVariants = cva("mx-auto w-full", {
     variants: {
         type: {
-            default: "max-w-7xl",
-            blog: "max-w-3xl gap-8",
-            nav: "max-w-7xl px-5 py-2 md:px-10 md:py-5",
+            default: "max-w-[1360px] px-5 py-5 md:px-10 py-8",
+            nav: "max-w-[1360px] px-5 md:px-10 py-2",
+            blog: "max-w-3xl px-5 py-5 md:px-10 py-8",
         },
     },
     defaultVariants: { type: "default" },
@@ -16,7 +16,12 @@ export const containerVariants = cva("mx-auto w-full", {
 export type ContainerProps = React.HTMLAttributes<HTMLDivElement> &
     VariantProps<typeof containerVariants>;
 
-export function Container({ className, type, children, ...props }: ContainerProps) {
+export function Container({
+    className,
+    type,
+    children,
+    ...props
+}: ContainerProps) {
     return (
         <div className={cn(containerVariants({ type, className }))} {...props}>
             {children}
