@@ -41,6 +41,12 @@
     --text-body-lg--line-height: calc(29 / 18);
     --text-body-lg--font-weight: 400;
 
+    /* Inline emphasis for calling out key words within large body copy — relaxed (1.625x) */
+    /* Pair with the `italic` utility — font-style isn't a supported --text-* modifier in Tailwind v4 */
+    --text-body-lg-highlight: 1.125rem;
+    --text-body-lg-highlight--line-height: calc(29 / 18);
+    --text-body-lg-highlight--font-weight: 600;
+
     /* Default body text for UI and content — normal (1.5x) */
     --text-body-md: 1rem;
     --text-body-md--line-height: calc(24 / 16);

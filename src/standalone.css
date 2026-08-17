@@ -15,7 +15,7 @@
 @source inline("font-{heading,body,label}");
 @source inline("text-{display-xl,display-lg,display-md}");
 @source inline("text-{heading-lg,heading-md,heading-sm}");
-@source inline("text-{body-lg,body-md,body-sm}");
+@source inline("text-{body-lg,body-lg-highlight,body-md,body-sm}");
 @source inline("text-{label-lg,label-md,label-sm}");
 @source inline("text-caption-default");
 
