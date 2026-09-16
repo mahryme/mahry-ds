@@ -23,3 +23,6 @@ export type { DividerProps } from "./components/atoms/divider/Divider";
 
 export { Card } from "./components/atoms/card/Card";
 export type { CardProps } from "./components/atoms/card/Card";
+
+export { Link } from "./components/atoms/link/Link";
+export type { LinkProps } from "./components/atoms/link/Link";
