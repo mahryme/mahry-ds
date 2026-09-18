@@ -26,3 +26,6 @@ export type { CardProps } from "./components/atoms/card/Card";
 
 export { Link } from "./components/atoms/link/Link";
 export type { LinkProps } from "./components/atoms/link/Link";
+
+export { LinkItem } from "./components/molecules/link-item/LinkItem";
+export type { LinkItemProps } from "./components/molecules/link-item/LinkItem";
