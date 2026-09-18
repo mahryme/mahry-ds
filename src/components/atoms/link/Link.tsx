@@ -19,7 +19,7 @@ export function Link({
     return (
         <Comp
             className={cn(
-                "rounded-sm font-label text-label-md text-action-on-ghost underline decoration-action-on-ghost/40 underline-offset-[3px] outline-none transition-colors duration-200 ease-out hover:decoration-action-on-ghost focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-border-focus",
+                "rounded-sm font-label text-label-md text-action-on-ghost underline decoration-action-on-ghost/40 underline-offset-[3px] outline-none transition-colors duration-200 ease-out hover:decoration-action-on-ghost focus-visible:outline-solid focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-border-focus",
                 className,
             )}
             {...props}
