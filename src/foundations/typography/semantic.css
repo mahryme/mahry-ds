@@ -9,12 +9,12 @@
     /* Hero headlines and full-bleed title text — tight (1.25x) */
     --text-display-xl: 4.5rem;
     --text-display-xl--line-height: calc(90 / 72);
-    --text-display-xl--font-weight: 700;
+    --text-display-xl--font-weight: 600;
 
     /* Large display headings for marketing sections — tight (1.25x) */
     --text-display-lg: 3.75rem;
     --text-display-lg--line-height: calc(75 / 60);
-    --text-display-lg--font-weight: 700;
+    --text-display-lg--font-weight: 600;
 
     /* Mid-scale display text and feature headings — tight (1.25x) */
     --text-display-md: 3rem;
@@ -23,28 +23,28 @@
 
     /* Primary page and section headings — snug (1.375x) */
     --text-heading-lg: 2.25rem;
-    --text-heading-lg--line-height: calc(50 / 36);
+    --text-heading-lg--line-height: calc(44 / 36);
     --text-heading-lg--font-weight: 600;
 
     /* Secondary section headings and card titles — snug (1.375x) */
     --text-heading-md: 1.875rem;
-    --text-heading-md--line-height: calc(42 / 30);
+    --text-heading-md--line-height: calc(40 / 30);
     --text-heading-md--font-weight: 600;
 
     /* Tertiary headings and prominent labels — snug (1.375x) */
     --text-heading-sm: 1.5rem;
-    --text-heading-sm--line-height: calc(34 / 24);
+    --text-heading-sm--line-height: calc(32 / 24);
     --text-heading-sm--font-weight: 500;
 
     /* Large body copy for comfortable long-form reading — relaxed (1.625x) */
     --text-body-lg: 1.125rem;
-    --text-body-lg--line-height: calc(29 / 18);
+    --text-body-lg--line-height: calc(28 / 18);
     --text-body-lg--font-weight: 400;
 
     /* Inline emphasis for calling out key words within large body copy — relaxed (1.625x) */
     /* Pair with the `italic` utility — font-style isn't a supported --text-* modifier in Tailwind v4 */
     --text-body-lg-highlight: 1.125rem;
-    --text-body-lg-highlight--line-height: calc(29 / 18);
+    --text-body-lg-highlight--line-height: calc(28 / 18);
     --text-body-lg-highlight--font-weight: 600;
 
     /* Default body text for UI and content — normal (1.5x) */
@@ -54,7 +54,7 @@
 
     /* Secondary body text and helper copy — normal (1.5x) */
     --text-body-sm: 0.875rem;
-    --text-body-sm--line-height: calc(21 / 14);
+    --text-body-sm--line-height: calc(20 / 14);
     --text-body-sm--font-weight: 400;
 
     /* Prominent UI labels, button text, and navigation items — normal (1.5x) */
