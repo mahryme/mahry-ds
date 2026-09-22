@@ -5,8 +5,8 @@ base for [mahry.fyi](https://mahry.fyi) and future prototypes. Native Figma
 variables in, Tailwind CSS v4 out.
 
 **Status:** early — foundational colour, typography and spacing tokens are in
-place; Button, IconButton, Badge, Container, Divider, Card, Link, Skeleton and
-Stack atoms shipped, plus the LinkItem molecule.
+place; Button, IconButton, Badge, Container, Divider, Card, Link, NavLink,
+Skeleton and Stack atoms shipped, plus the LinkItem molecule.
 
 ## Install
 
@@ -20,7 +20,7 @@ concerns, not bundled.
 ## Usage
 
 ​`ts
-import { Button, IconButton, Badge, Container, Divider, Card, Link, Skeleton, Stack, LinkItem } from "@mahry/ds";
+import { Button, IconButton, Badge, Container, Divider, Card, Link, NavLink, Skeleton, Stack, LinkItem } from "@mahry/ds";
 import "@mahry/ds/styles";
 ​`
 

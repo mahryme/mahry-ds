@@ -27,6 +27,9 @@ export type { CardProps } from "./components/atoms/card/Card";
 export { Link } from "./components/atoms/link/Link";
 export type { LinkProps } from "./components/atoms/link/Link";
 
+export { NavLink } from "./components/atoms/nav-link/NavLink";
+export type { NavLinkProps } from "./components/atoms/nav-link/NavLink";
+
 export { Skeleton } from "./components/atoms/skeleton/Skeleton";
 export type { SkeletonProps } from "./components/atoms/skeleton/Skeleton";
 
