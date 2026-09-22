@@ -1,0 +1,23 @@
+/* semantic.css — spacing roles, no theming (values don't change by mode) */
+/* Keyed to Tailwind's --spacing unit (0.25rem = 4px). Mirrors the gap-role
+   variables in Figma's semantic/spacing collection (file TAEpKurZNTd8QzhDvheWlH,
+   node 10:26). Margin-role tokens (page-margin, chrome-vertical) exist in that
+   same Figma collection but are deliberately not implemented here yet — see
+   the follow-up task once Header/Footer are real components. */
+@theme {
+    /* Label+value pairs, icon-row gaps. Same both breakpoints. */
+    --spacing-micro: calc(var(--spacing) * 1);
+
+    /* Paragraph-to-paragraph stacks, label+list groups, logo+wordmark gap.
+       Same both breakpoints. */
+    --spacing-tight: calc(var(--spacing) * 2);
+
+    /* Heading-to-body gap — the default content rhythm. Same both breakpoints. */
+    --spacing-default: calc(var(--spacing) * 4);
+
+    /* Column/grid split gap for multi-column layouts. Mobile value (20px) is
+       inferred, not independently audited — mobile layouts stack
+       single-column, so there's no directly observed "mobile column split". */
+    --spacing-column-gap: calc(var(--spacing) * 5);
+    --spacing-column-gap-desktop: calc(var(--spacing) * 8);
+}

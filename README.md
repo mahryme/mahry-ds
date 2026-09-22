@@ -4,9 +4,9 @@ A lean, generic, AI-readable design system foundation — built as the shared
 base for [mahry.fyi](https://mahry.fyi) and future prototypes. Native Figma
 variables in, Tailwind CSS v4 out.
 
-**Status:** early — foundational colour and typography tokens are in place;
-Button, IconButton, Badge, Container, Divider, Card, Link and Skeleton atoms
-shipped, plus the LinkItem molecule.
+**Status:** early — foundational colour, typography and spacing tokens are in
+place; Button, IconButton, Badge, Container, Divider, Card, Link, Skeleton and
+Stack atoms shipped, plus the LinkItem molecule.
 
 ## Install
 
@@ -20,7 +20,7 @@ concerns, not bundled.
 ## Usage
 
 ​`ts
-import { Button, IconButton, Badge, Container, Divider, Card, Link, Skeleton, LinkItem } from "@mahry/ds";
+import { Button, IconButton, Badge, Container, Divider, Card, Link, Skeleton, Stack, LinkItem } from "@mahry/ds";
 import "@mahry/ds/styles";
 ​`
 

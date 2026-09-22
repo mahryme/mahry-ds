@@ -33,3 +33,6 @@
 
 /* Colour — action */
 @source inline("{text,bg,border}-{action-primary,action-primary-hover,action-primary-press,action-primary-disabled,action-on-primary,action-on-primary-disabled,action-secondary,action-secondary-hover,action-secondary-press,action-secondary-disabled,action-on-secondary,action-on-secondary-disabled,action-tertiary,action-tertiary-hover,action-tertiary-press,action-tertiary-disabled,action-on-tertiary,action-on-tertiary-disabled,action-tertiary-border,action-tertiary-border-disabled,action-ghost-hover,action-ghost-press,action-on-ghost,action-on-ghost-disabled}");
+
+/* Spacing */
+@source inline("gap-{micro,tight,default,column-gap,column-gap-desktop}");

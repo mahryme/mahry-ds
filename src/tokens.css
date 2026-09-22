@@ -3,3 +3,5 @@
 
 @import "./foundations/typography/primitive.css";
 @import "./foundations/typography/semantic.css";
+
+@import "./foundations/spacing/semantic.css";
