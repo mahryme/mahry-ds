@@ -39,14 +39,14 @@ If no `data-theme` is set, the system defaults to light.
 
 Mahry DS defines a `--typo-font-sans` token but does **not** bundle font
 files — that keeps the published CSS small and lets you choose how fonts are
-loaded. The system is designed around **Inter**:
+loaded. The system is designed around **Geist**:
 
 ​`
-npm install @fontsource-variable/inter
+npm install @fontsource-variable/geist
 ​`
 
 ​`ts
-import "@fontsource-variable/inter";
+import "@fontsource-variable/geist";
 ​`
 
 ## Architecture

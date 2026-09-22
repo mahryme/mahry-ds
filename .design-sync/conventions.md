@@ -12,7 +12,7 @@ Every colour family above also exists in `text-`, `bg-`, and `border-` forms (e.
 - `bg-action-{primary,secondary,tertiary}[-hover|-press|-disabled]`, `text-action-on-{primary,secondary,tertiary,ghost}[-disabled]`, `bg-action-ghost-hover` — interactive-element colors (what `Button`/`IconButton` use internally)
 
 **Typography families** — apply as a pair, `font-{role}` + `text-{scale}`:
-- Roles: `font-heading`, `font-body`, `font-label` (all currently the Inter variable font)
+- Roles: `font-heading`, `font-body`, `font-label` (all currently the Geist variable font)
 - Scales: `text-display-{xl,lg,md}`, `text-heading-{lg,md,sm}`, `text-body-{lg,md,sm}`, `text-label-{lg,md,sm}`, `text-caption-default` — each scale carries its own line-height and font-weight, so don't add separate `font-bold`/`leading-*` utilities alongside them.
 
 **Dark mode**: no ThemeProvider component exists. Set `data-theme="dark"` (or `"light"`) as an HTML attribute on any ancestor element (commonly `<html>` or the app's root div) — every semantic color var flips automatically. No attribute defaults to light.
