@@ -35,6 +35,7 @@
         "build:dist": "npm run build:lib && npm run build:styles"
     },
     "peerDependencies": {
+        "lucide-react": ">=1.0.0",
         "react": "^19.0.0",
         "react-dom": "^19.0.0"
     },

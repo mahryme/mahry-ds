@@ -36,5 +36,22 @@ export type { SkeletonProps } from "./components/atoms/skeleton/Skeleton";
 export { Stack, stackVariants } from "./components/atoms/stack/Stack";
 export type { StackProps } from "./components/atoms/stack/Stack";
 
+export {
+    Breadcrumb,
+    BreadcrumbList,
+    BreadcrumbItem,
+    BreadcrumbLink,
+    BreadcrumbPage,
+    BreadcrumbSeparator,
+} from "./components/molecules/breadcrumb/Breadcrumb";
+export type {
+    BreadcrumbProps,
+    BreadcrumbListProps,
+    BreadcrumbItemProps,
+    BreadcrumbLinkProps,
+    BreadcrumbPageProps,
+    BreadcrumbSeparatorProps,
+} from "./components/molecules/breadcrumb/Breadcrumb";
+
 export { LinkItem } from "./components/molecules/link-item/LinkItem";
 export type { LinkItemProps } from "./components/molecules/link-item/LinkItem";
