@@ -5,11 +5,11 @@ const meta = {
     title: "Atoms/Container",
     component: Container,
     argTypes: {
-        type: { control: "radio", options: ["default", "blog", "nav"] },
+        variant: { control: "radio", options: ["default", "no-py"] },
         children: { control: "text" },
     },
     args: {
-        type: "default",
+        variant: "default",
         children: "Container content",
     },
 } satisfies Meta<typeof Container>;
@@ -17,6 +17,5 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = { args: { type: "default" } };
-export const Blog: Story = { args: { type: "blog" } };
-export const Nav: Story = { args: { type: "nav" } };
+export const Default: Story = { args: { variant: "default" } };
+export const NoPy: Story = { args: { variant: "no-py" } };

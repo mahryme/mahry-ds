@@ -28,11 +28,11 @@ createRoot(document.getElementById("root")!).render(
         <div style={{ display: "grid", gap: 40, padding: "24px 0" }}>
             <section>
                 <Label>
-                    Container type=&quot;nav&quot; — max-w-7xl, px-5 py-2,
-                    md:px-10 md:py-5 (resize viewport to see the responsive
-                    padding jump)
+                    Container variant=&quot;no-py&quot; — max-w-[1360px], horizontal
+                    gutter only (resize viewport to see the responsive
+                    gutter jump)
                 </Label>
-                <Container type="nav" style={boundary}>
+                <Container variant="no-py" style={boundary}>
                     <div
                         style={{
                             display: "flex",
@@ -52,23 +52,11 @@ createRoot(document.getElementById("root")!).render(
 
             <section>
                 <Label>
-                    Container type=&quot;default&quot; — max-w-7xl, no padding
+                    Container variant=&quot;default&quot; — max-w-[1360px],
+                    horizontal gutter + vertical padding
                 </Label>
                 <Container style={boundary}>
-                    <p>Default container content, full max-w-7xl width.</p>
-                </Container>
-            </section>
-
-            <section>
-                <Label>
-                    Container type=&quot;blog&quot; — max-w-3xl, gap-8 (note:
-                    gap only applies if the container itself is flex/grid —
-                    this div is block, so gap-8 currently has no visible
-                    effect on these children)
-                </Label>
-                <Container type="blog" style={boundary}>
-                    <p>First paragraph of blog content.</p>
-                    <p>Second paragraph, to check spacing between children.</p>
+                    <p>Default container content, capped at max-w-[1360px].</p>
                 </Container>
             </section>
         </div>

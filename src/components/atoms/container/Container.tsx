@@ -2,15 +2,14 @@ import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "../../../lib/utils";
 
-export const containerVariants = cva("mx-auto w-full", {
+export const containerVariants = cva("mx-auto w-full max-w-[1360px]", {
     variants: {
-        type: {
-            default: "max-w-[1360px] px-5 py-5 md:px-10 md:py-8",
-            nav: "max-w-[1360px] px-5 py-2 md:px-10 md:py-3",
-            blog: "max-w-3xl px-5 py-5 md:px-10 md:py-8",
+        variant: {
+            default: "px-5 py-5 md:px-10 md:py-8",
+            "no-py": "px-5 py-0 md:px-10 md:py-0",
         },
     },
-    defaultVariants: { type: "default" },
+    defaultVariants: { variant: "default" },
 });
 
 export type ContainerProps = React.HTMLAttributes<HTMLDivElement> &
@@ -18,12 +17,12 @@ export type ContainerProps = React.HTMLAttributes<HTMLDivElement> &
 
 export function Container({
     className,
-    type,
+    variant,
     children,
     ...props
 }: ContainerProps) {
     return (
-        <div className={cn(containerVariants({ type, className }))} {...props}>
+        <div className={cn(containerVariants({ variant, className }))} {...props}>
             {children}
         </div>
     );
