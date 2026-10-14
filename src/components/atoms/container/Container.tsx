@@ -2,11 +2,11 @@ import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "../../../lib/utils";
 
-export const containerVariants = cva("mx-auto w-full max-w-[1360px]", {
+export const containerVariants = cva("mx-auto w-full max-w-[1440px]", {
     variants: {
         variant: {
-            default: "px-5 py-5 md:px-10 md:py-8",
-            "no-py": "px-5 py-0 md:px-10 md:py-0",
+            default: "px-5 py-5 md:px-8 md:py-8",
+            "no-pt": "px-5 pt-0 pb-5 md:px-8 md:pt-0 md:pb-8",
         },
     },
     defaultVariants: { variant: "default" },

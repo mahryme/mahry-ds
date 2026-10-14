@@ -28,11 +28,11 @@ createRoot(document.getElementById("root")!).render(
         <div style={{ display: "grid", gap: 40, padding: "24px 0" }}>
             <section>
                 <Label>
-                    Container variant=&quot;no-py&quot; — max-w-[1360px], horizontal
-                    gutter only (resize viewport to see the responsive
-                    gutter jump)
+                    Container variant=&quot;no-pt&quot; — max-w-[1440px],
+                    horizontal gutter and bottom padding, no top padding
+                    (resize viewport to see the responsive gutter jump)
                 </Label>
-                <Container variant="no-py" style={boundary}>
+                <Container variant="no-pt" style={boundary}>
                     <div
                         style={{
                             display: "flex",
@@ -52,11 +52,11 @@ createRoot(document.getElementById("root")!).render(
 
             <section>
                 <Label>
-                    Container variant=&quot;default&quot; — max-w-[1360px],
+                    Container variant=&quot;default&quot; — max-w-[1440px],
                     horizontal gutter + vertical padding
                 </Label>
                 <Container style={boundary}>
-                    <p>Default container content, capped at max-w-[1360px].</p>
+                    <p>Default container content, capped at max-w-[1440px].</p>
                 </Container>
             </section>
         </div>
