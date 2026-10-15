@@ -8,6 +8,7 @@ const meta = {
     argTypes: {
         label: { control: "text" },
         description: { control: "text" },
+        status: { control: "inline-radio", options: ["available", "coming-soon"] },
         asChild: { control: false },
         children: { control: false },
     },
@@ -22,6 +23,14 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {};
+
+export const ComingSoon: Story = {
+    args: { status: "coming-soon", label: "Title" },
+    play: async ({ canvas }) => {
+        await expect(canvas.queryByRole("link")).toBeNull();
+        await expect(canvas.getByText("Coming soon")).toBeInTheDocument();
+    },
+};
 
 export const LongDescription: Story = {
     args: {
