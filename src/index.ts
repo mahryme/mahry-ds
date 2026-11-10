@@ -30,6 +30,9 @@ export type { LinkProps } from "./components/atoms/link/Link";
 export { NavLink } from "./components/atoms/nav-link/NavLink";
 export type { NavLinkProps } from "./components/atoms/nav-link/NavLink";
 
+export { Tab, tabVariants } from "./components/atoms/tab/Tab";
+export type { TabProps } from "./components/atoms/tab/Tab";
+
 export { Skeleton } from "./components/atoms/skeleton/Skeleton";
 export type { SkeletonProps } from "./components/atoms/skeleton/Skeleton";
 
@@ -55,3 +58,10 @@ export type {
 
 export { LinkItem } from "./components/molecules/link-item/LinkItem";
 export type { LinkItemProps } from "./components/molecules/link-item/LinkItem";
+
+export { Tabs, TabsList, TabsPanel } from "./components/molecules/tabs/Tabs";
+export type {
+    TabsProps,
+    TabsListProps,
+    TabsPanelProps,
+} from "./components/molecules/tabs/Tabs";

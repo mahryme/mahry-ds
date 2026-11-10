@@ -6,7 +6,8 @@ variables in, Tailwind CSS v4 out.
 
 **Status:** early — foundational colour, typography and spacing tokens are in
 place; Button, IconButton, Badge, Container, Divider, Card, Link, NavLink,
-Skeleton and Stack atoms shipped, plus the LinkItem and Breadcrumb molecules.
+Skeleton, Stack and Tab atoms shipped, plus the LinkItem, Breadcrumb and Tabs
+molecules.
 
 ## Install
 
@@ -25,7 +26,7 @@ npm install lucide-react
 ## Usage
 
 ​`ts
-import { Button, IconButton, Badge, Container, Divider, Card, Link, NavLink, Skeleton, Stack, LinkItem, Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbPage, BreadcrumbSeparator } from "@mahry/ds";
+import { Button, IconButton, Badge, Container, Divider, Card, Link, NavLink, Skeleton, Stack, Tab, LinkItem, Tabs, TabsList, TabsPanel, Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbPage, BreadcrumbSeparator } from "@mahry/ds";
 import "@mahry/ds/styles";
 ​`
 
