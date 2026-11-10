@@ -239,14 +239,14 @@
     --semantic-action-on-secondary: var(--palette-neutral-950);
     --semantic-action-on-secondary-disabled: var(--palette-neutral-500);
 
-    --semantic-action-tertiary: var(--palette-neutral-800);
-    --semantic-action-tertiary-hover: var(--palette-neutral-700);
-    --semantic-action-tertiary-press: var(--palette-neutral-600);
-    --semantic-action-tertiary-disabled: var(--palette-neutral-800);
+    --semantic-action-tertiary: var(--palette-neutral-950);
+    --semantic-action-tertiary-hover: var(--palette-neutral-900);
+    --semantic-action-tertiary-press: var(--palette-neutral-800);
+    --semantic-action-tertiary-disabled: var(--palette-neutral-900);
     --semantic-action-on-tertiary: var(--palette-white);
     --semantic-action-on-tertiary-disabled: var(--palette-neutral-500);
-    --semantic-action-tertiary-border: var(--palette-neutral-600);
-    --semantic-action-tertiary-border-disabled: var(--palette-neutral-700);
+    --semantic-action-tertiary-border: var(--palette-neutral-800);
+    --semantic-action-tertiary-border-disabled: var(--palette-neutral-800);
 
     --semantic-action-ghost-hover: var(--palette-neutral-800);
     --semantic-action-ghost-press: var(--palette-neutral-700);
