@@ -19,6 +19,9 @@ export default defineConfig({
             fileName: "index",
         },
         rollupOptions: {
+            // Rollup strips the "use client" directives from bundled deps (Radix),
+            // so re-add one at the top of the bundle for Next.js server components.
+            output: { banner: '"use client";' },
             external: ["react", "react-dom", "react/jsx-runtime", "lucide-react"],
         },
     },
